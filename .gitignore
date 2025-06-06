@@ -1,0 +1,35 @@
+# Archivos y directorios generados por el sistema operativo
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+*~
+*.bak
+.DS_Store
+
+# Directorio virtualenv (opcional, si usas entornos virtuales)
+venv/
+env/
+data/
+
+# Archivos de registro
+logs/
+*.log
+
+# Archivos de respaldo (ejemplo de bases de datos SQLite)
+db.sqlite3
+*.sqlite3
+
+# Carpeta de dependencias (por ejemplo, cuando se usa pipenv o poetry)
+__pypackages__/
+Pipfile.lock
+Pipfile
+
+node_modules/
+CACHE/
+
+media/
+
+client_secret.json
+
+.env

@@ -1,0 +1,29 @@
+services:
+  porfolio:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /dev/:/dev/
+    ports:
+      - "8000:8000"
+      - "3000:3000"
+    expose:
+      - "8000"
+      - "3000"
+    depends_on:
+      - db  # Dependemos del servicio mariadb
+    privileged: true
+
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: 123
+      POSTGRES_USER: gladoncio
+      POSTGRES_DB: portafolio
+    volumes:
+      - ./data:/var/lib/postgresql/data
+    ports:
+      - "5000:5432"
