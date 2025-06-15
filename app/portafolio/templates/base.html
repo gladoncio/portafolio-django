@@ -28,16 +28,17 @@
         <p class="text-lg sm:text-2xl text-gray-300 mb-6 sm:mb-10">Desarrollador Full Stack y creador de contenido</p>
         <div class="flex flex-wrap gap-4 sm:gap-8">
             <!-- Ícono de Email -->
-            <a href="mailto:adrian.navarro.messina@gmail.com" class="text-green-400 hover:scale-110 transition">
-                <img src={% static "/svg/mail30x30.svg" %} alt="mail">
+            <a href="mailto:adrian.navarro.messina@gmail.com"
+              class="text-green-400 hover:scale-110 transition duration-200">
+                {{ CORREO_PORTADA.contenido|safe }}
             </a>
             <!-- Ícono de LinkedIn -->
             <a href="https://linkedin.com/in/tuusuario" class="text-green-400 hover:scale-110 transition">
-                <img src={% static "/svg/linkeding30x30.svg" %} alt="linkedin">
+                 {{ LINKEDIN.contenido|safe }}
             </a>
             <!-- Ícono de GitHub -->
             <a href="https://github.com/tuusuario" class="text-green-400 hover:scale-110 transition">
-              <img src={% static "/svg/github30x30.svg" %} alt="github">
+                 {{ GITHUB.contenido|safe }}
             </a>
         </div>
     </div>

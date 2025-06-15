@@ -5,7 +5,7 @@ dos2unix /app/app/portafolio/tailwind.sh
 
 # # Migrar la base de datos
 python ./app/manage.py makemigrations
-python ./app/manage.py migrate core
+python ./app/manage.py migrate portafolio
 python ./app/manage.py migrate
 
 # Ejecutar el servidor
